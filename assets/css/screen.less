@@ -144,7 +144,7 @@ article.preview {
     }
 }
 
-h1.blog-title, h2.blog-description {
+h1.blog-title, h2.blog-subtitle, h2.blog-description {
     text-align: center
 }
 
@@ -152,13 +152,25 @@ h1.blog-title {
     font-size: 48px;
     line-height: 52px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 0;
+}
+
+h2.blog-subtitle {
+    margin: 0px;
+    text-transform: lowercase;
+    img {
+      padding: 0px 1px;
+    }
+    a {
+      color: inherit;
+    }
 }
 
 h2.blog-description {
     border-bottom: 1px solid @borderColor;
     border-top: 1px solid @borderColor;
+    margin-top: 20px;
     margin-bottom: 2em;
     padding: .5em 1em;
     line-height: 1.2em;
